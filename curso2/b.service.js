@@ -2,14 +2,17 @@ module.exports = {
     name: "b",
 
     actions: {
-        hello(){
-            return "Hello from service b";
+        calculate(ctx){
+            let { num1, num2 } = ctx.params;
+            let result = num1 + num2;
+            this.log("Teste: " + result)
+            return result;
         }
     },
 
     events: {
-        "hello"(){
-            this.log("Opaaa!")
+        "message"(){
+            this.log("Calculo realizado!")
         }   
     },
 

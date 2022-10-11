@@ -2,15 +2,15 @@ module.exports = {
     name: "a",
 
     actions: {
-        async hello(ctx){
-            let resultb = await ctx.call("b.hello");
-            ctx.emit("hello");
-            return "Hello from service a alterado" + ". " + resultb;
+        async init(ctx){
+            let resultb = await ctx.call("b.calculate", { num1: 1, num2: 2 });
+            ctx.emit("message");
+            return "Resultado da soma: " + resultb;
         }
     },
 
     started() {
-        console.log('Iniciou serviço B')
+        console.log('Iniciou serviço A')
     }
  
 }
