@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "moleculer": "^0.14.24",
-    "moleculer-repl": "^0.7.3"
+    "moleculer-repl": "^0.7.3",
+    "pnpm": "^7.13.4"
   }
 }

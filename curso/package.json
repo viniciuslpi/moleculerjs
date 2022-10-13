@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
     "moleculer": "^0.14.24",
-    "moleculer-repl": "^0.7.3"
+    "moleculer-repl": "^0.7.3",
+    "moleculer-web": "^0.10.4"
   }
 }
