@@ -27,13 +27,20 @@ module.exports = {
                 },
 
                 aliases: {
-                    "GET /" (req, res) {
-                        res.status(200).send({ message: 'foi' })
+                    async "GET /"(req, res) {
+                        res.status(200).send({ message: this.init() })
                     },
-                    "GET favicon.ico"(route, req, res) {}
+                    "GET favicon.ico"(route, req, res) { }
                 }
             }
         ]
+    },
+
+
+    methods: {
+        init() {
+            return "TESTE";
+        }
     },
 
     created() {
