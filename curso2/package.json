@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "node node_modules/moleculer/bin/moleculer-runner.js -c config.js *.service.js --repl",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
