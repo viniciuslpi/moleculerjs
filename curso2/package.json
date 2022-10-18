@@ -11,7 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "moleculer": "^0.14.24",
+    "moleculer-db": "^0.8.19",
+    "moleculer-db-adapter-sequelize": "^0.2.15",
     "moleculer-repl": "^0.7.3",
-    "pnpm": "^7.13.4"
+    "moleculer-web": "^0.10.4",
+    "mysql2": "^2.3.3",
+    "pnpm": "^7.13.4",
+    "sequelize": "^6.25.2",
+    "sqlite3": "^5.1.2"
   }
 }
